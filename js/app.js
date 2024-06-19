@@ -27,7 +27,7 @@ document.getElementById('form_pesoIdeal').addEventListener('submit', function(ev
     "<p>Peso Actual: " + pesoActual + " kg</p>" +
     "<p>Altura: " + estatura + " cm</p>" +
     "<p>IMC: " + imcResultado + "</p>" +
-    "<p>Peso Ideal: " + pesoIdeal + " kg</p>" +
+    "<p>Peso Ideal: " + diferenciaPeso + " kg</p>" +
     "<p>" + mensajePerderGanar + ": " + diferenciaPeso.toFixed(2) + " kg</p>" +
     "</div>";
 });
