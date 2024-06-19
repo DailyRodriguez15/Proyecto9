@@ -164,14 +164,32 @@
             <!--Row1 Formulario 1-->
             <div id="app_js_1" class="row  d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
-                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                  <h3>Calcular Edad</h3>
-                  <h5>47. Diseñar un algoritmo que identifique si una persona es niño, joven, adulto o adulto mayor. Para lo cual debe leer su edad.</h5>
-                  <!-- Explicación sobre el formulario a llenar -->
-                  <p>Si la edad es menor o igual a 12 años, el algoritmo debe indicar "Eres un niño"</p>
-                  <p>Si la edad es mayor a 12 años y menor o igual a 40 años, el algoritmo debe indicar "Eres un joven"</p>
-                  <p>Si la edad es mayor a 40 años y menor o igual a 60 años, el algoritmo debe indicar "Eres un adulto"</p>
-                  <p>Si la edad es mayor a 60 años el algoritmo debe indicar "Eres un adulto mayor"</p>
+                <form class="p-md-5 border rounded-3 shadow p-3 mb-5 bg-body-tertiary">
+                  <div class="d-flex"></div>
+                  <h3 class="text-center"><img src="img/calculadora.png" alt="logo" width="90px"> Calcular Edad</h3>
+                  <h5>Diseñar un algoritmo que identifique si una persona es niño, joven, adulto o adulto mayor. Para lo cual debe leer su edad.</h5>
+                  <button type="button" class="btn btn-primary mb-3 mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Mas información
+                  </button>
+
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title fs-5" id="staticBackdropLabel">Intrucciones a seguir: </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <!-- Explicación sobre el formulario a llenar -->
+                          <p>Si la edad es menor o igual a 12 años, el algoritmo debe indicar "Eres un niño"</p>
+                          <p>Si la edad es mayor a 12 años y menor o igual a 40 años, el algoritmo debe indicar "Eres un joven"</p>
+                          <p>Si la edad es mayor a 40 años y menor o igual a 60 años, el algoritmo debe indicar "Eres un adulto"</p>
+                          <p>Si la edad es mayor a 60 años el algoritmo debe indicar "Eres un adulto mayor"</p>
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
                   <!-- ingresar datos -->
                   <h6>Ingrese su edad:</h6>
                   <div class="form-floating mb-3">
@@ -187,25 +205,26 @@
             <!--Row2 Formulario 2-->
             <div id="app_js_2" class="row  d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
-                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                  <h3>Calcular Peso y Estatura</h3>
+                <form class="p-md-5 border rounded-3 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary">
+                  <h3 class="text-center"><img src="img/peso.png" alt="logo" width="90px"> Calcular Peso y Estatura</h3>
                   <!-- Explicación sobre el formulario a llenar -->
                   <div class="row mb-4 mt-4">
-                    <h5>48. Diseñe un algoritmo que simule las siguientes tabla:</h5>
+                    <h5>Diseñe un algoritmo que simule las siguientes tabla:</h5>
                     <!-- Imágenes -->
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                      <img src="img/img-1.png" alt="...">
+                      <img class="border rounded-3 img-fluid objet-fit" src="img/img-1.png" alt="...">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                      <img src="img/img-2.png" alt="...">
+                      <img class="border rounded-3 img-fluid objet-fit" src="img/img-2.png" alt="...">
                     </div>
                   </div>
                  <!-- ingresar datos -->
                   <h6>Ingrese los datos:</h6>
                   <div class="form-floating mb-3">
                       <select class="form-select" id="sexo">
-                          <option value="H">Hombre</option>
-                          <option value="M">Mujer</option>
+                        <option value="">-Seleccione-</option>
+                        <option value="H">Hombre</option>
+                        <option value="M">Mujer</option>
                       </select>
                       <label for="sexo">Sexo</label>
                   </div>
@@ -222,14 +241,14 @@
             <!--Row3 Formulario 3-->
             <div id="app_js_3" class="row  d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
-                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                  <h3>Calcular IMC</h3>
+                <form class="p-md-5 border rounded-3 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary">
+                  <h3 class="text-center"><img src="img/imc2.png" alt="logo" width="90px"> Calcular IMC</h3>
                   <!-- Explicación sobre el formulario a llenar -->
                   <div class="row mb-4 mt-4">
-                    <h5>49. Diseñe un algoritmo que simule la siguiente gráfica:</h5>
+                    <h5>Diseñe un algoritmo que simule la siguiente gráfica:</h5>
                     <!-- Imagen -->
                     <div class="col-md-12 mb-4 mt-4">
-                      <img class="objet-fit img-fluid" src="img/img-3.png" alt=".....">
+                      <img class="objet-fit img-fluid border rounded-3" src="img/img-3.png" alt=".....">
                     </div>
                   </div>
                   <!-- Ingresar datos -->
@@ -251,20 +270,20 @@
             <!--Row4 Formulario 4-->
             <div id="app_js_4" class="row  d-flex justify-content-center align-items-center">
               <div class="col-md-10 py-5">
-                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                <form class="p-md-5 border rounded-3 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary">
                   <!-- Explicación sobre el formulario a llenar -->
-                  <h3>Presión Arterial</h3>
-                  <h5>50. Diseñe un algoritmo que simule la siguiente gráfica:</h5>
+                  <h3 class="text-center mb-4"><img src="img/presion-arterial2.png" alt="logo" width="90px"> Presión Arterial</h3>
+                  <h5>Diseñe un algoritmo que simule la siguiente gráfica:</h5>
                   <!-- Imagen -->
                   <div class="row mb-4 mt-3">
                     <div class="col-md-12">
-                      <img class="objet-fit img-fluid" src="img/img-4.png" alt="">
+                      <img class="objet-fit img-fluid border rounded-3" src="img/img-4.png" alt="">
                     </div>
                   </div>
                   <!-- Ingresar datos -->
                   <h6>Ingrese los datos:</h6>
                   <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="presionSistolica" placeholder="Presión Sistólica">
+                    <input type="number" class="form-control" id="presionSistolica" placeholder="Presión Sistólica" required>
                     <label for="presionSistolica">Presión Sistólica</label>
                   </div>
                   <button onclick="calcularPresionArterial()" class="w-100 btn btn-lg btn-primary" type="button">Calcular</button>
@@ -276,9 +295,9 @@
              <!--Row4 Formulario 5-->
             <div id="app_js_5" class="row  d-flex justify-content-center align-items-center">
                 <div class="col-md-10 py-5">
-                    <form id="form_pesoIdeal" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <form id="form_pesoIdeal" class="p-md-5 border rounded-3 bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary">
                         <div class="card-header">
-                            <h1 class="text-center border rounded"><img src="img/balance.gif" alt="logo" width="90px"> Calculadora de peso ideal</h1>
+                            <h1 class="text-center"><img class="border rounded-3" src="img/balance.gif" alt="logo" width="90px"> Calculadora de peso ideal</h1>
                         </div>
                         <div class="mt-3">
                             <label for="sexoActual" class="form-label">Sexo</label>
@@ -290,23 +309,41 @@
                         </div>
                         <div class="mt-3">
                             <label for="edadActual" class="form-label">Edad</label>
-                            <input type="number" class="form-control" id="edadActual" required>
+                            <input type="number" class="form-control" id="edadActual" placeholder="Edad"  required>
                         </div>
                         <div class="mt-3">
-                            <label for="pesoActual" class="form-label">Peso actual (kg)</label>
-                            <input type="number" step="0.1" class="form-control" id="pesoActual" required>
+                            <label for="pesoActual" class="form-label" >Peso actual (kg)</label>
+                            <input type="number" step="0.1" class="form-control" id="pesoActual" placeholder="Peso actual" required>
                         </div>
                         <div class="mt-3">
                             <label for="estaturaActual" class="form-label">Altura (cm)</label>
-                            <input type="number" step="0.1" class="form-control" id="estaturaActual" required>
+                            <input type="number" step="0.1" class="form-control" id="estaturaActual" placeholder="Altura" required>
                         </div>
                         <button type="submit" class="btn btn-primary mt-3">Calcular peso ideal</button>
                         <div id="resultadosPesoIdeal" class="mt-4"></div>
                     </form>
                 </div>
               </div>
+              
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Ing. Daily Rodriguez</span>
+            </div>
+        
+            <ul class="nav col-md-4 ms-5 justify-content-center list-unstyled d-flex">
+              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter-x"></i></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+          </footer>
+        </div>
           <!--Fin Contenedor-->
         </main>
+        
         <!-- Fin contenido Principal -->
       </div>
     </div>
@@ -319,7 +356,7 @@
     <script src="js/color-modes.js"></script>
     <script src="js/main.js"></script>
     <script src="js/app.js"></script>
-    
+
   </body>
 
 </html>
